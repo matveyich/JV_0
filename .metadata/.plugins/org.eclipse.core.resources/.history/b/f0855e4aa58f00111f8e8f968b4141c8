@@ -1,0 +1,16 @@
+
+public class Milk extends DrinkDecorator {
+
+	Drink drink;
+	
+	public Milk(drink) {
+		this.drink = drink;
+		this.drinkCost = 2;
+	}
+	
+	@Override
+	public int cost() {
+		return drink.cost() + this.drinkCost;
+	}
+
+}

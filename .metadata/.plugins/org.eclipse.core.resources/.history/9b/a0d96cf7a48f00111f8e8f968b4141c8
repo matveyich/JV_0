@@ -1,0 +1,13 @@
+
+public class Coffee extends Drink {
+	
+	public Coffee() {
+		description = "Coffe";
+	}
+	
+	@Override
+	public int cost() {
+		return 10;
+	}
+
+}

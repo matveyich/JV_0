@@ -1,0 +1,9 @@
+
+public class ADuck extends Duck {
+
+	public ADuck() {
+		flyBeh = new FlyToSky();
+		setQuackBeh(new QuakWithSound());
+	}
+	
+}

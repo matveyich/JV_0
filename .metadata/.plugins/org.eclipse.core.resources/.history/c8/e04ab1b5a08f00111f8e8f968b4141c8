@@ -1,0 +1,12 @@
+
+public class Demo {
+
+
+	public static void main(String[] args) {
+		Duck duck = new ADuck();
+		duck.performFly();
+		duck.performQuack()();
+
+	}
+
+}

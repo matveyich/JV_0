@@ -1,0 +1,12 @@
+
+public abstract class Drink {
+	protected String description;
+	protected int drinkcost;
+	
+	public String getDescription(){
+		return description;
+	}
+	
+	public abstract int cost();
+
+}
