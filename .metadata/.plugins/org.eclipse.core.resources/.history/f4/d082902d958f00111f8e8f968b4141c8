@@ -1,0 +1,12 @@
+
+public class DataFactory {
+
+	public DataAccess getDataSource(String dataSourceType){
+		if (dataSourceType == "SQL"){
+			return new SqlDataSource();
+		} else {
+			return null;
+		}
+	}
+	
+}

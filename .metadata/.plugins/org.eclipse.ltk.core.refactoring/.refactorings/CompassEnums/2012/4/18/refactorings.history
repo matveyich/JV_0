@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Encapsulate field &apos;CompassArrows.arrow&apos; in &apos;CompassArrows&apos;&#x0D;&#x0A;- Original project: &apos;CompassEnums&apos;&#x0D;&#x0A;- Original element: &apos;CompassArrows.arrow&apos;&#x0D;&#x0A;- Getter method name: &apos;getArrow&apos;&#x0D;&#x0A;- Setter method name: &apos;setArrow&apos;&#x0D;&#x0A;- Field visibility: &apos;public&apos;&#x0D;&#x0A;- Use getter and setter methods in declaring type" comments="false" declaring="true" description="Encapsulate field &apos;arrow&apos;" flags="589830" getter="getArrow" id="org.eclipse.jdt.ui.self.encapsulate" input="/src&lt;{CompassArrows.java[CompassArrows^arrow" insertion="0" setter="setArrow" stamp="1335431449824" version="1.0" visibility="1"/>
+</session>

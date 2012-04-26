@@ -1,0 +1,8 @@
+import java.util.list;
+
+public interface DataAccess {
+
+	void InserEntity(User user);
+	List<User> ReadAll();
+	
+}

@@ -1,0 +1,20 @@
+
+public class Demo {
+
+	public static void main(String[] args) {
+		
+		CompassArrows north = CompassArrows.N;
+		System.out.println(north);
+		CompassArrows east = north.next();
+		System.out.println(east);
+		CompassArrows south = east.next();
+		System.out.println(south);
+		CompassArrows west = south.next();
+		System.out.println(west);
+		CompassArrows north = south.next();
+		System.out.println(north);
+		
+		
+	}
+
+}

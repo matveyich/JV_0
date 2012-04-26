@@ -1,0 +1,14 @@
+
+public class Demo {
+
+	public static void main(String[] args) {
+		
+		User u1 = new User(1, "Vasya", "Pupkin");
+		
+		DataFactory fabric = new DataFactory();
+		
+		DataAccess src = fabric.getDataSource("XML");
+		
+	}
+
+}

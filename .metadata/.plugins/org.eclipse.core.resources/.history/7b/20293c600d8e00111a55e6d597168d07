@@ -1,0 +1,25 @@
+/**
+ * 
+ * @author ÖÇ
+ * asf
+ *
+ */
+public class Hello {
+
+	public static void main(String[] args) {
+
+		FirstClass fc = new FirstClass();
+		System.out.println("i1 = " + FirstClass.i1);
+		System.out.println("i2 = " + fc.i2);
+		
+		FirstClass.i1 = FirstClass.i1 + 1;
+		System.out.println(FirstClass.i1);
+		
+		fc.i2 = fc.i2 + 1;
+		System.out.println(fc.i2);
+		
+		FirstClass fc2 = new FirstClass();
+		System.out.println(fc.i2);
+	}
+
+}

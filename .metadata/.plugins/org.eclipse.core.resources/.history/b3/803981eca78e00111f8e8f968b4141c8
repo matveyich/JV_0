@@ -1,0 +1,7 @@
+
+public class UserHelper {
+public String getFIO(User user){
+	String fio = user.name + " " + user.surname;
+	return fio;
+}
+}

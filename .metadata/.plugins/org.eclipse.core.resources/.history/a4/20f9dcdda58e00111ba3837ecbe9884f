@@ -1,0 +1,24 @@
+/**
+ * 
+ * @author ÖÇ
+ * asf
+ *
+ */
+public class Hello {
+
+	public static void main(String[] args) {
+
+		UserHelper helper = new UserHelper();
+		
+		User u1 = new User();
+		u1.name = "vaysa";
+		u1.surname = "asdf";
+		
+		User u2 = new User();
+		u2.name = "vitya";
+		u2.surname = "ff";
+		
+		System.out.println(helper.getFIO(u2)); 
+	}
+
+}

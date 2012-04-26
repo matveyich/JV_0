@@ -1,0 +1,6 @@
+
+public class UserHelper {
+public String getFIO(User user){
+	System.out.println();
+}
+}

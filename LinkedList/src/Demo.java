@@ -1,0 +1,29 @@
+
+public class Demo {
+
+	public static void main(String[] args) {
+
+		LinkedList list = new LinkedList();
+		
+		Node n1 = new Node();
+		n1.value = 5;
+				
+		Node n2 = new Node();
+		n2.value = 6;				
+		
+		n1.next = n2;
+		
+		list.head = n1;
+		list.tail = n2;
+		
+		Node temp = list.head;
+		
+		while (temp != null){
+			System.out.println(temp.value);
+			temp = temp.next;
+		}
+			
+		
+	}
+
+}

@@ -1,0 +1,49 @@
+
+public enum CompassArrows {
+
+	N(1),E(2),S(3),W(4);
+	
+	CompassArrows(int value)
+	{
+		this.setArrow(value);
+	}
+	
+	public int getArrow() {
+		return arrow;
+	}
+
+	private void setArrow(int arrow) {
+		this.arrow = arrow;
+	}
+
+	private int arrow;
+	
+	CompassArrows move(int step){
+		int value = this.getArrow() + step;
+		
+		if (value>4){
+			return CompassArrows.N;
+		}
+		
+		switch (value) {
+		case 2:
+			return CompassArrows.E;
+		case 3:
+			return CompassArrows.S;
+		case 4:
+			return CompassArrows.W;
+			default: return null;
+		}
+	}
+	
+	CompassArrows next(){
+		
+		return next(1);
+		
+	}
+	
+	CompassArrows prev() {
+		
+	}
+	
+}

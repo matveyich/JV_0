@@ -1,0 +1,14 @@
+
+public class FirstClass {
+	
+	static int i1 = 5;
+	public int i2 = 5;
+	
+	public void printOneWord(){
+		System.out.println("Print from non static method");
+	}
+	public static void printSecondWord(){
+		System.out.println("Print from static method");
+	}
+	
+}

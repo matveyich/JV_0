@@ -1,0 +1,11 @@
+
+public class Demo {
+
+	public static void main(String[] args) {
+		
+		Base t1 = new Test();
+		System.out.println(t1.newOverridingMethod("Hello"));
+		System.out.println(t1.newOverridingMethod());
+	}
+
+}

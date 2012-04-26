@@ -1,0 +1,11 @@
+
+public class FirstClass {
+	
+	public void printOneWord(){
+		System.out.println("Print from non static method");
+	}
+	public static void printSecondWord(){
+		System.out.println("Print from static method");
+	}
+	
+}

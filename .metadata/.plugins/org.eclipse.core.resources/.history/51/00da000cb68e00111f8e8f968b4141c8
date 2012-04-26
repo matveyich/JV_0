@@ -1,0 +1,10 @@
+package PacksgeDemo.BLL;
+import PacksgeDemo.DAL.Test;
+
+public class Packages {
+
+	public static void main(String[] args) {
+		PacksgeDemo.DAL.Test t1 = new Test();
+	}
+
+}

@@ -1,0 +1,12 @@
+
+public class Demo {
+
+	public static void main(String[] args) {
+
+		double d = 5.0;
+		Base t1 = new Base();
+		System.out.println(t1.newOverridingMethod("Hello"));
+		
+	}
+
+}

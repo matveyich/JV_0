@@ -1,0 +1,13 @@
+
+public class Test {
+	int x;
+	int y;
+	public Test(){
+		this(0,0);
+	}
+	public Test(int x, int y){
+		this.x = x;
+		this.y = y;
+	}
+	
+}

@@ -1,0 +1,19 @@
+/**
+ * 
+ * @author ÖÇ
+ * asf
+ *
+ */
+public class Hello {
+
+	public static void main(String[] args) {
+		
+		//TODO: add func
+		
+		FirstClass.printSecondWord();
+		FirstClass fc = new FirstClass();
+		fc.printOneWord();
+
+	}
+
+}

@@ -1,0 +1,8 @@
+
+public class Test {
+
+	public void printLine(int value) {
+		System.out.println("Hello  " + value);
+	}
+	
+}

@@ -1,0 +1,8 @@
+
+public class Base {
+
+	public void newOverridingMethod(String test){
+		
+	}
+	
+}

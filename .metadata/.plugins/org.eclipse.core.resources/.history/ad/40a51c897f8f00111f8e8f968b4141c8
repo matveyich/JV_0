@@ -1,0 +1,10 @@
+
+public enum CompassArrows {
+
+	public CompassArrows(int value)
+	{
+		this.arrow = value;
+	}
+	
+	private int arrow;
+}

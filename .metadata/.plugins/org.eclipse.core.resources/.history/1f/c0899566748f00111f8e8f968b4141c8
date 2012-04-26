@@ -1,0 +1,13 @@
+
+public class Demo {
+
+	public static void main(String[] args) {
+
+		double d = 5.0;
+		Test t1 = new Test();
+		t1.printLine(d);
+		t1.newOverridingMethod("Hello");
+		
+	}
+
+}

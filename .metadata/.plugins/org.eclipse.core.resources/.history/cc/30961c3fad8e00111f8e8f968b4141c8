@@ -1,0 +1,9 @@
+
+public class UsingC {
+	
+	int a;
+	boolean b;
+	double c;
+	char d;
+	
+}

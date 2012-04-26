@@ -1,0 +1,16 @@
+
+public class Demo {
+
+	public static void main(String[] args) {
+		
+		ItWorker[] workers = new ItWorker[4];
+		
+		ItWorker w1 = new ItWorker(0, 22, "Vasya", "Pupkin", 1000);
+		ItWorker w2 = new ItWorker(0, 22, "Vasya1", "Pupkin1", 1000);
+		ItWorker w3 = new ItWorker(0, 22, "Vasya2", "Pupkin2", 1000);
+		ItWorker w4 = new ItWorker(0, 22, "Vasya3", "Pupkin3", 1000);
+		ItWorker w5 = new ItWorker(0, 22, "Vasya4", "Pupkin4", 1000);
+		ItWorker w6 = new ItWorker(0, 22, "Vasya6", "Pupkin6", 1000);
+	}
+
+}

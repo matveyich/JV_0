@@ -1,0 +1,8 @@
+
+public class DataFactory {
+
+	public DataAccess getDataSource(String dataSourceType){
+		return null;
+	}
+	
+}

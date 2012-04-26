@@ -1,0 +1,25 @@
+
+public class Demo {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		System.out.println("A a = new A()");
+		A a = new A();
+		System.out.println("A a = new A()");
+		A b = new B();
+		System.out.println("A a = new A()");
+		A c = new C();
+		System.out.println("B d = new C()");
+		B d = new C();
+		
+		
+		a.meth();
+		b.meth();
+		c.meth();
+		d.meth();
+
+	}
+
+}
