@@ -1,0 +1,23 @@
+
+public class Duck {
+
+	private FlyBehaviour flybeh;
+	private QuackBehaviour quackbeh;
+	
+	public FlyBehaviour getFlybeh() {
+		return flybeh;
+	}
+	public void setFlybeh(FlyBehaviour flybeh) {
+		this.flybeh = flybeh;
+	}
+	
+	public QuackBehaviour getQuackbeh() {
+		return quackbeh;
+	}
+	public void setQuackbeh(QuackBehaviour quackbeh) {
+		this.quackbeh = quackbeh;
+	}
+	
+	
+	
+}

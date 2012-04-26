@@ -1,0 +1,7 @@
+
+public class Duck {
+
+	FlyBehaviour flybeh;
+	QuackBehaviour quackbeh;
+	
+}
