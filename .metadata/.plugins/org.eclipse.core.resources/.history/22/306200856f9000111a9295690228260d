@@ -1,0 +1,29 @@
+import java.io.IOException;
+import java.io.InputStream;
+
+
+public class ExceptionRunner {
+
+	void getData() //throws Exception
+	{
+		InputStream stream = null;
+				
+		try {
+			throw new ArrayIndexOutOfBoundsException("jkjhkjh");
+		} catch (Exception e){
+			System.out.println("retrun oops");
+			return;
+		}
+		finally
+		{
+			try {
+				InputStream stream2 = stream;
+				stream2.close();
+			} catch(IOException e){
+				e.printStackTrace();
+			}
+			System.out.println("Finally");
+		}
+	}
+	
+}

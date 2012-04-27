@@ -1,0 +1,17 @@
+
+public class ExceptionRunner {
+
+	void getData() //throws Exception
+	{
+		try {
+			throw new ArrayIndexOutOfBoundsException("jkjhkjh");
+		} catch (Exception e){
+			return;
+		}
+		finally
+		{
+			System.out.println("Finally");
+		}
+	}
+	
+}

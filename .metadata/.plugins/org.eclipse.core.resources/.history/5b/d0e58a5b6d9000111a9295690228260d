@@ -1,0 +1,9 @@
+
+public class ExceptionRunner {
+
+	void getData() //throws Exception
+	{
+		throw new RuntimeException("1st exception");
+	}
+	
+}

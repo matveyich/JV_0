@@ -1,0 +1,17 @@
+
+public class Demo {
+
+	public static void main(String[] args) {
+
+		ExceptionRunner run = new ExceptionRunner();
+		
+		try {
+			run.getData();	
+		} catch(RuntimeException ex){
+			System.out.println(ex.getStackTrace().toString());
+		}
+		
+
+	}
+
+}

@@ -1,0 +1,23 @@
+
+public class Demo {
+
+	public static void main(String[] args) {
+
+		ExceptionRunner run = new ExceptionRunner();
+		
+		try {
+			run.getData();	
+		} 
+		catch(RuntimeException ex)
+		{
+			System.out.println("RuntimeException msg: " + ex.getMessage().toString());	
+		} 
+		catch(Exception ex)
+		{
+			System.out.println("Other Exception msg: " + ex.getMessage().toString());
+		}
+		
+
+	}
+
+}
