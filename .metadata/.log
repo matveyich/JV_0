@@ -1518,3 +1518,44 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.e
 !MESSAGE Could not find view: org.eclipse.ui.internal.introview
 !SUBENTRY 1 unknown 0 0 2012-04-27 12:02:20.485
 !MESSAGE OK
+
+!ENTRY org.eclipse.egit.core 4 0 2012-04-27 12:05:30.916
+!MESSAGE An exception occurred during push on URI https://github.com/matveyich/JV_0: An internal Exception occurred during push: https://github.com/matveyich/JV_0: https://github.com/matveyich/JV_0/info/refs?service=git-receive-pack not found
+!STACK 0
+org.eclipse.jgit.api.errors.JGitInternalException: Exception caught during execution of push command
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:156)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:194)
+	at org.eclipse.egit.ui.internal.push.PushWizard$PushJob.run(PushWizard.java:295)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.jgit.errors.NoRemoteRepositoryException: https://github.com/matveyich/JV_0: https://github.com/matveyich/JV_0/info/refs?service=git-receive-pack not found
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:435)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:365)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:130)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1120)
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:152)
+	... 3 more
+
+!ENTRY org.eclipse.egit.ui 4 0 2012-04-27 12:05:30.932
+!MESSAGE Can't connect to any repository: https://github.com/matveyich/JV_0 (An internal Exception occurred during push: https://github.com/matveyich/JV_0: https://github.com/matveyich/JV_0/info/refs?service=git-receive-pack not found)
+
+!ENTRY org.eclipse.egit.ui 4 0 2012-04-27 12:06:05.548
+!MESSAGE An internal error occurred
+!STACK 0
+org.eclipse.jgit.api.errors.JGitInternalException: Exception caught during execution of commit command
+	at org.eclipse.jgit.api.CommitCommand.call(CommitCommand.java:277)
+	at org.eclipse.egit.core.op.CommitOperation.commit(CommitOperation.java:255)
+	at org.eclipse.egit.core.op.CommitOperation.access$7(CommitOperation.java:233)
+	at org.eclipse.egit.core.op.CommitOperation$1.run(CommitOperation.java:197)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2326)
+	at org.eclipse.egit.core.op.CommitOperation.execute(CommitOperation.java:207)
+	at org.eclipse.egit.ui.internal.commit.CommitUI$2.run(CommitUI.java:220)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.io.IOException: Процесс не может получить доступ к файлу, так как часть этого файла заблокирована другим процессом
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(Unknown Source)
+	at org.eclipse.jgit.util.IO.readFully(IO.java:280)
+	at org.eclipse.jgit.storage.file.ObjectDirectoryInserter.insert(ObjectDirectoryInserter.java:100)
+	at org.eclipse.jgit.api.CommitCommand.createTemporaryIndex(CommitCommand.java:363)
+	at org.eclipse.jgit.api.CommitCommand.call(CommitCommand.java:195)
+	... 8 more

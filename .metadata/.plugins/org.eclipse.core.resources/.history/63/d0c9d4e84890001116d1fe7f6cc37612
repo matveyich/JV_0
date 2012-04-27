@@ -1,0 +1,6 @@
+
+public interface ICat {
+
+	void majo();
+	
+}

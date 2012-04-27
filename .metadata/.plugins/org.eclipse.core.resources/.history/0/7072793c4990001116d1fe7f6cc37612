@@ -1,0 +1,10 @@
+
+public class ToyCat implements ICat {
+
+	@Override
+	public void mjao() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -3,7 +3,7 @@ public class DuckAdapter implements DuckInterface {
 
 	ICat catToAdapt;
 	
-	public DuckAdapter(ICat catToAdapt) {
+	public DuckAdapter(Cat catToAdapt) {
 		this.catToAdapt = catToAdapt;
 	}
 	

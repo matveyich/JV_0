@@ -8,7 +8,7 @@ public class Demo {
 		ICat toyCat = new ToyCat();
 		
 		DuckInterface catLikeADuck = new DuckAdapter(cat);
-		DuckInterface toyCatLikeADuck = new DuckAdapter(toyCat);
+		DuckInterface toyCatLikeADuck = new DuckAdapter(toyCat)
 		
 		catLikeADuck.quack();
 		toyCatLikeADuck.quack();
