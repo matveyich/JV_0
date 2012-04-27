@@ -2,4 +2,23 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="FirstClass"/>
 <fullyQualifiedTypeName name="UserHelper"/>
+<fullyQualifiedTypeName name="Test"/>
+<fullyQualifiedTypeName name="PacksgeDemo.DAL.Test"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="LinkedList"/>
+<fullyQualifiedTypeName name="CompassArrows"/>
+<fullyQualifiedTypeName name="DataFactory"/>
+<fullyQualifiedTypeName name="DataAccess"/>
+<fullyQualifiedTypeName name="SqlDataSource"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="XMLDataSource"/>
+<fullyQualifiedTypeName name="QuackBehaviour"/>
+<fullyQualifiedTypeName name="FlyBehaviour"/>
+<fullyQualifiedTypeName name="FlyToSky"/>
+<fullyQualifiedTypeName name="QuakWithSound"/>
+<fullyQualifiedTypeName name="java.lang.Character"/>
+<fullyQualifiedTypeName name="Coffee"/>
+<fullyQualifiedTypeName name="java.awt.List"/>
+<fullyQualifiedTypeName name="DataStation"/>
+<fullyQualifiedTypeName name="FirstVisualElement"/>
 </qualifiedTypeNameHistroy>

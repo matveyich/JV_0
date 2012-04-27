@@ -1,2 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<typeInfoHistroy/>
+<typeInfoHistroy>
+<typeInfo handle="=CastingDemo/C:\/Program Files\/Java\/jre6\/lib\/rt.jar&lt;java.lang(Object.class[Object" modifiers="33" timestamp="1335260855706"/>
+<typeInfo handle="=CastingDemo/src&lt;{Base.java[Base" modifiers="1" timestamp="1335353549057"/>
+<typeInfo handle="=DuckSimulator/src&lt;{Duck.java[Duck" modifiers="1" timestamp="1335445316343"/>
+<typeInfo handle="=Decorator/src&lt;{Drink.java[Drink" modifiers="1025" timestamp="1335447447325"/>
+<typeInfo handle="=Decorator/src&lt;{DrinkDecorator.java[DrinkDecorator" modifiers="1025" timestamp="1335447215723"/>
+<typeInfo handle="=Observer/C:\/Program Files\/Java\/jre6\/lib\/rt.jar&lt;java.util(Observable.class[Observable" modifiers="33" timestamp="1335260855706"/>
+<typeInfo handle="=Observer/src&lt;{Observer.java[Observer" modifiers="513" timestamp="1335511491185"/>
+<typeInfo handle="=Observer/src&lt;{VisualElements.java[VisualElements" modifiers="513" timestamp="1335511675605"/>
+</typeInfoHistroy>

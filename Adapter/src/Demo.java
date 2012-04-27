@@ -1,0 +1,14 @@
+
+public class Demo {
+
+	public static void main(String[] args) {
+
+		DuckInterface duck = new ADuck();
+		Cat cat = new Cat();
+		DuckInterface catLikeADuck = new DuckAdapter(cat);
+		
+		catLikeADuck.quack();
+
+	}
+
+}

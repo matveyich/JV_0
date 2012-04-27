@@ -1,0 +1,12 @@
+
+public class DuckAdapter implements DuckInterface {
+
+	
+	
+	public void quack() {
+
+		
+
+	}
+
+}
