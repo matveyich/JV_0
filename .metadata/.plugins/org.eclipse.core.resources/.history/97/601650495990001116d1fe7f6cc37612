@@ -1,0 +1,11 @@
+import java.util.*;
+
+
+public class Test {
+
+	List<String> demo = new ArrayList<String>();
+	void add(String data)
+	{
+		demo.add(data);
+	}
+}

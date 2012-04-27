@@ -1,0 +1,16 @@
+
+public class Demo {
+
+	public static void main(String[] args) {
+
+		Test t1 = new Test();
+		t1.add("Data1");
+		t1.add("Data2");
+		
+		for (String str: t1.demo){
+			System.out.println(str);
+		}
+
+	}
+
+}
