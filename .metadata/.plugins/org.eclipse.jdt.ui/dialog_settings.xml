@@ -10,8 +10,8 @@
 	<section name="DialogBounds_SuperInterfaceSelectionDialog">
 		<item value="309" key="DIALOG_WIDTH"/>
 		<item value="-26" key="DIALOG_Y_ORIGIN"/>
-		<item value="488" key="DIALOG_HEIGHT"/>
 		<item value="96" key="DIALOG_X_ORIGIN"/>
+		<item value="488" key="DIALOG_HEIGHT"/>
 		<item value="1|Tahoma|8.25|0|WINDOWS|1|-11|0|0|0|400|0|0|0|1|0|0|0|0|Tahoma" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="RefactoringWizard.preview">
@@ -46,8 +46,8 @@
 		<section name="projects">
 			<section name="FirstEclipseProject">
 				<item value="C:\Projects\FirstEclipseProject\doc" key="destdir"/>
-				<item value="C:\Projects\FirstEclipseProject\javadoc.xml" key="antpath"/>
 				<item value="" key="href"/>
+				<item value="C:\Projects\FirstEclipseProject\javadoc.xml" key="antpath"/>
 			</section>
 		</section>
 	</section>
@@ -66,8 +66,8 @@
 		<section name="DialogBoundsSettings">
 			<item value="600" key="DIALOG_WIDTH"/>
 			<item value="-34" key="DIALOG_Y_ORIGIN"/>
-			<item value="-50" key="DIALOG_X_ORIGIN"/>
 			<item value="500" key="DIALOG_HEIGHT"/>
+			<item value="-50" key="DIALOG_X_ORIGIN"/>
 			<item value="1|Tahoma|8.25|0|WINDOWS|1|-11|0|0|0|400|0|0|0|1|0|0|0|0|Tahoma" key="DIALOG_FONT_NAME"/>
 		</section>
 	</section>
@@ -75,15 +75,15 @@
 	</section>
 	<section name="JavaElementSearchActions">
 	</section>
-	<section name="RenameInformationPopup">
-	</section>
 	<section name="org.eclipse.ltk.ui.refactoring.settings">
+	</section>
+	<section name="RenameInformationPopup">
 	</section>
 	<section name="JavadocWizardDialog">
 		<item value="508" key="DIALOG_WIDTH"/>
 		<item value="126" key="DIALOG_Y_ORIGIN"/>
-		<item value="565" key="DIALOG_HEIGHT"/>
 		<item value="390" key="DIALOG_X_ORIGIN"/>
+		<item value="565" key="DIALOG_HEIGHT"/>
 		<item value="1|Tahoma|8.25|0|WINDOWS|1|-11|0|0|0|400|0|0|0|1|0|0|0|0|Tahoma" key="DIALOG_FONT_NAME"/>
 	</section>
 </section>

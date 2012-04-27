@@ -21,4 +21,15 @@
 <fullyQualifiedTypeName name="java.awt.List"/>
 <fullyQualifiedTypeName name="DataStation"/>
 <fullyQualifiedTypeName name="FirstVisualElement"/>
+<fullyQualifiedTypeName name="ICat"/>
+<fullyQualifiedTypeName name="DuckAdapter"/>
+<fullyQualifiedTypeName name="ToyCat"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.Map.Entry"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="ConnectionString"/>
+<fullyQualifiedTypeName name="java.util.Set"/>
+<fullyQualifiedTypeName name="java.util.Queue"/>
+<fullyQualifiedTypeName name="java.util.LinkedList"/>
 </qualifiedTypeNameHistroy>

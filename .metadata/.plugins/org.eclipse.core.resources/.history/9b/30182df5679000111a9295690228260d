@@ -1,0 +1,10 @@
+
+public class Demo {
+
+
+	public static void main(String[] args) {
+		Test<Integer> dataClass = new Test();
+		System.out.println(dataClass.toString());
+	}
+
+}

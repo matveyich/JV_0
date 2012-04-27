@@ -1,0 +1,16 @@
+
+public class Test <T>{
+	
+	T data;
+	
+	T myMeth(T value){
+		return null;
+	}
+	
+	
+	public String toString() {
+	
+		return data.getClass().toString();
+	}
+
+}

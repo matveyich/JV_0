@@ -1,0 +1,33 @@
+import java.util.Iterator;
+import java.util.Map.Entry;
+
+
+public class Demo {
+
+	public static void main(String[] args) {
+
+		Test t1 = new Test();
+		t1.addToMap("key1", 1);
+		t1.addToMap("key123", 3434);
+		
+		Iterator<Entry<String, Integer>> iter = t1.map.entrySet().iterator();
+		while (iter.hasNext()){
+			Entry<String, Integer> entry = iter.next();
+			System.out.println(entry.getKey() + " " + entry.getValue());
+		}
+		
+		t1.addToSet(22);
+		t1.addToSet(6666);
+		t1.addToSet(22323);
+		t1.addToSet(4545);
+		t1.addToSet(223);
+		
+		System.out.println(t1.setMap.size());
+		
+		for (int i: t1.setMap){
+			System.out.println(i);
+		}
+
+	}
+
+}
