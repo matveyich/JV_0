@@ -1,0 +1,29 @@
+import java.util.*;
+
+
+public class DataStation implements Observable{
+
+	List<Observer> observers = new ArrayList<Observer>();
+	
+	
+	
+	@Override
+	public void registerObserver(Observer o) {
+		observers.add(o);
+	}
+
+	@Override
+	public void removeObserver(Observer o) {
+		int value = observers.indexOf(o);
+		if (value >= 0) 
+			observers.remove(value);
+	}
+
+	@Override
+	public void notifyObservers() {
+		for (Observer o: observers){
+			o.update(fdata, sdata);
+		}
+	}
+
+}

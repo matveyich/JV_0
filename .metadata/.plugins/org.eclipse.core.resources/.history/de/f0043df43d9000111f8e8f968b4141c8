@@ -1,0 +1,12 @@
+
+public class Demo {
+
+	public static void main(String[] args) {
+		
+		DataStation da = new DataStation();
+		FirstVisualElement f1 = new FirstVisualElement(da);
+		FirstVisualElement f2 = new FirstVisualElement(da);
+
+	}
+
+}

@@ -1,0 +1,26 @@
+
+public class FirstVisualElement implements Observer, VisualElements {
+
+
+	Observable dataFactory;
+	float fdata;
+	float sdata;
+	
+	public FirstVisualElement(Observable object) {
+		this.dataFactory = object;
+		this.dataFactory.registerObserver(this);
+	}
+	
+	public void display() {
+		System.out.println("Fdata: " + this.fdata + "; Sdata: " + this.sdata);
+
+	}
+
+
+	public void update(float fdata, float sdata) {
+		this.fdata = fdata;
+		this.sdata = sdata;
+
+	}
+
+}

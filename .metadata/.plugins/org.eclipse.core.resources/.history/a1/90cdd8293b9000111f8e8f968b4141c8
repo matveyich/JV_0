@@ -1,0 +1,26 @@
+import java.util.*;
+
+
+public class DataStation implements Observable{
+
+	List<Observer> observers = new ArrayList<Observer>();
+	
+	@Override
+	public void registerObserver(Observer o) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void removeObserver(Observer o) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void notifyObservers() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

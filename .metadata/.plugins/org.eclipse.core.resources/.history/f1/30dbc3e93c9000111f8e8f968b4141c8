@@ -1,0 +1,16 @@
+
+public class FirstVisualElement implements Observer, VisualElements {
+
+	@Override
+	public void display() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void update(float fdata, float sdata) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
