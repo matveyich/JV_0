@@ -9,7 +9,7 @@ public class Demo {
 		Runnable run = new MyRunnable();
 		Thread thread2 = new Thread(run);
 
-		ExecutorService executor = Executors.newFixedThreadPool(4);
+		ExecutorService executor = Executors.newFixedThreadPool(3);
 		
 		executor.submit(thread2);
 		executor.submit(thread2);
