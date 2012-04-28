@@ -1,0 +1,14 @@
+import java.util.ArrayList;
+
+import serializePackage.User;
+
+
+public class Demo {
+
+	public static void main(String[] args) {
+
+		User u1 = new User(1, "Vasya", "23452345", new ArrayList<String>().add("some test data"));
+		
+	}
+
+}
