@@ -1,0 +1,12 @@
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+
+public class GuiApp extends JFrame{
+
+	public void createGui()
+	{
+		JButton button = new JButton("Go!");
+	}
+	
+}
