@@ -22,7 +22,7 @@ public class Demo {
 		ObjectOutputStream objOut = null;
 		
 		try {
-			FileOutputStream out = new FileOutputStream("C:\\ProjectsData\\data.ser.txt");
+			FileOutputStream out = new FileOutputStream("C:\\ProjectsData\\data.ser");
 			objOut = new ObjectOutputStream(out);
 			
 			objOut.writeObject(u1);

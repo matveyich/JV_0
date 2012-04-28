@@ -22,7 +22,7 @@ public class Demo {
 		ObjectOutputStream objOut = null;
 		
 		try {
-			FileOutputStream out = new FileOutputStream("C:\\ProjectsData\\data.ser.txt");
+			FileOutputStream out = new FileOutputStream("data.ser");
 			objOut = new ObjectOutputStream(out);
 			
 			objOut.writeObject(u1);
@@ -31,10 +31,6 @@ public class Demo {
 			
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
-		}
-		finally
-		{
-			objOut.close();
 		}
 	}
 
