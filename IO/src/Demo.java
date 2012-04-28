@@ -42,7 +42,6 @@ public class Demo {
 		finally {
 			bWriter.close();
 		}
-		//bWriter.append(str);
 	}
 	
 	String getStringFromFile() throws IOException
@@ -55,6 +54,7 @@ public class Demo {
 		try {
 			fileReader = new FileReader("C:\\ProjectsData\\user.txt");
 			bReader = new BufferedReader(fileReader);
+			bReader = new CapitalizationReader(bReader);
 			
 			try {
 				while ((line = bReader.readLine()) != null){

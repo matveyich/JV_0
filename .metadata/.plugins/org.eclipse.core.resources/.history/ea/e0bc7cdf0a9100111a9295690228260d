@@ -1,0 +1,7 @@
+
+public interface Capitalizator {
+
+	public String readLine();
+	public String writeLine();
+	
+}
