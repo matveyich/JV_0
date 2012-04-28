@@ -1,6 +1,9 @@
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 
 import userPackage.User;
@@ -22,7 +25,28 @@ public class Demo {
 		u2.serialize();
 		u3.serialize();
 		
-		deSerialize();
+//		deSerialize();
+		FileInputStream inp = new FileInputStream("C:\\ProjectsData\\data.ser.txt");
+		ObjectInputStream objInput = new ObjectInputStream(inp);
+		Object obj = null;
+		
+		try {
+			while((obj = objInput.readObject()) != null)
+			{
+				User u = (User)obj;
+				System.out.println(u.getId() + "; " + u.getName() + "; " + u.getPhone());
+				for (String value: u.getAttributes())
+				{
+					System.out.println(value);
+				}
+			}
+		} catch (Exception e) {
+			//e.printStackTrace();
+		}
+		finally
+		{
+			objInput.close();
+		}
 		
 	}
 	public static void deSerialize() throws IOException
