@@ -1,10 +1,10 @@
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.ObjectOutputStream;
+import java.io.ObjectInputStream;
 import java.util.ArrayList;
 
-import serializePackage.User;
+import userPackage.User;
 
 
 public class Demo {
@@ -19,23 +19,37 @@ public class Demo {
 		User u2 = new User(2, "Petya", "7798797", attr);
 		User u3 = new User(3, "Kolya", "64999879", attr);
 		
-		ObjectOutputStream objOut = null;
+		u1.serialize();
+		u2.serialize();
+		u3.serialize();
+		
+		deSerialize();
+		
+	}
+	public static void deSerialize() throws IOException
+	{
+		FileInputStream inp = new FileInputStream("C:\\ProjectsData\\data.ser.txt");
+		ObjectInputStream objInput = new ObjectInputStream(inp);
+		Object obj = null;
 		
 		try {
-			FileOutputStream out = new FileOutputStream("C:\\ProjectsData\\data.ser.txt");
-			objOut = new ObjectOutputStream(out);
-			
-			objOut.writeObject(u1);
-			objOut.writeObject(u2);
-			objOut.writeObject(u3);
-			
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
+			while((obj = objInput.readObject()) != null)
+			{
+				User u = (User)obj;
+				System.out.println(u.getId() + "; " + u.getName() + "; " + u.getPhone());
+				for (String value: u.getAttributes())
+				{
+					System.out.println(value);
+				}
+			}
+		} catch (Exception e) {
+			//e.printStackTrace();
 		}
 		finally
 		{
-			objOut.close();
+			objInput.close();
 		}
+		
 	}
 
 }

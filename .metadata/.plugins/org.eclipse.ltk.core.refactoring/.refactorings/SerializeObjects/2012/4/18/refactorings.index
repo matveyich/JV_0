@@ -3,3 +3,4 @@
 1335603200346	Encapsulate field 'name'
 1335603204195	Encapsulate field 'phone'
 1335603207825	Encapsulate field 'attributes'
+1335604364794	Rename package 'serializePackage'

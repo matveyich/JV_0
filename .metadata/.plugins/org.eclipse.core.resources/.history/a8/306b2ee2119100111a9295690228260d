@@ -1,0 +1,51 @@
+package serializePackage;
+
+import java.io.Serializable;
+import java.util.List;
+
+
+public class User implements Serializable{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 2322611132902241888L;
+	
+	private int id;
+	private String name;
+	private String phone;
+	private List<String> attributes;
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getPhone() {
+		return phone;
+	}
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+	public List<String> getAttributes() {
+		return attributes;
+	}
+	public void setAttributes(List<String> attributes) {
+		this.attributes = attributes;
+	}
+	
+	public User(int id, String name, String phone, List<String> attributes)
+	{
+		this.id = id;
+		this.name = name;
+		this.phone = phone;
+		this.attributes = attributes;
+	}
+}

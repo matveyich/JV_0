@@ -1,0 +1,62 @@
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.util.ArrayList;
+
+import userPackage.User;
+
+
+public class Demo {
+
+	public static void main(String[] args) throws IOException {
+		
+		ArrayList<String> attr = new ArrayList<String>();
+		attr.add("some test data");
+		
+		
+		User u1 = new User(1, "Vasya", "23452345", attr);
+		User u2 = new User(2, "Petya", "7798797", attr);
+		User u3 = new User(3, "Kolya", "64999879", attr);
+		
+		u1.serialize();
+		u2.serialize();
+		u3.serialize();
+		
+		deSerialize();
+		
+	}
+	public static void deSerialize() throws IOException
+	{
+		ObjectInputStream objInput = null;
+		
+		FileInputStream inp = null;
+		try {
+			inp = new FileInputStream("C:\\ProjectsData\\data.ser.txt");
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+		objInput = new ObjectInputStream(inp);
+		Object obj = null;
+		
+		try {
+			while((obj = objInput.readObject()) != null)
+			{
+				User u = (User)obj;
+				System.out.println(u.getId() + "; " + u.getName() + "; " + u.getPhone());
+				for (String value: u.getAttributes())
+				{
+					System.out.println(value);
+				}
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		finally
+		{
+			objInput.close();
+		}
+		
+	}
+
+}
