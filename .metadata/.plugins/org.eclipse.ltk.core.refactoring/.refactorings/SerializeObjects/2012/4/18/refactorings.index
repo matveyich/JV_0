@@ -1,0 +1,5 @@
+1335603121056	Rename type 'user'
+1335603194477	Encapsulate field 'id'
+1335603200346	Encapsulate field 'name'
+1335603204195	Encapsulate field 'phone'
+1335603207825	Encapsulate field 'attributes'
