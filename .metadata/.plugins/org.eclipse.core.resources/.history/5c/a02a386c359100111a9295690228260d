@@ -8,8 +8,13 @@ public class ButtonEventHandler implements ActionListener{
 
 	@Override
 	public void actionPerformed(ActionEvent arg0) {
-		WorkerThread thread = new WorkerThread();
-		thread.start();
+		try {
+			Thread.sleep(10000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		JOptionPane.showMessageDialog(null, "Test!");
 		
 	}
 

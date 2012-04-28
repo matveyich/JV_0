@@ -15,7 +15,7 @@ public class WorkerThread extends Thread{
 	
 	void showDialog() throws InterruptedException{
 
-		Thread.sleep(1000);
+		Thread.sleep(10000);
 		JOptionPane.showMessageDialog(null, "Test2");
 	}
 }
