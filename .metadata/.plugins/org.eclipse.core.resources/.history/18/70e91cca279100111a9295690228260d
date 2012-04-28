@@ -10,16 +10,12 @@ public class Demo {
 		Thread thread2 = new Thread(run);
 
 		ExecutorService executor = Executors.newFixedThreadPool(3);
-		
 		executor.submit(thread2);
 		executor.submit(thread2);
 		executor.submit(thread2);
-		
 		executor.submit(thread2);
 		executor.submit(thread2);
 		executor.submit(thread2);
-		
-		executor.shutdown();
 		
 		for (int i = 0; i < 1000; i++) {
 			try {

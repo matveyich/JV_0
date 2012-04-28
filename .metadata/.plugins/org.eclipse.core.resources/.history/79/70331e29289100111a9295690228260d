@@ -10,7 +10,7 @@ public class MyRunnable implements Runnable{
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
-			System.out.println("Thread: " + Thread.currentThread().getId() + "; " + i);
+			System.out.println("Third thread: " + i);
 		}
 		
 	}
