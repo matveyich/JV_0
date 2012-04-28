@@ -11,13 +11,6 @@ public class ButtonEventHandler implements ActionListener{
 		WorkerThread thread = new WorkerThread();
 		thread.start();
 		
-		Thread runnable = new Thread() {
-			public void run() {
-				
-			}
-		};
-		runnable.start();
-		
 	}
 
 	
