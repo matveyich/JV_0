@@ -1,0 +1,44 @@
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+
+public class Demo {
+
+	public static void main(String[] args) {
+
+	}
+
+	String getStringFromFile() throws IOException
+	{
+		String str = "";
+		FileReader fileReader = null;
+		BufferedReader bReader = null;
+		try {
+			fileReader = new FileReader("C:\\user1.txt");
+			bReader = new BufferedReader(fileReader);
+			
+			String line;
+			
+			try {
+				while ((line = bReader.readLine()) != null){
+					str += line;
+				}
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+			
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+		finally
+		{
+			if (bReader!=null){
+				bReader.close();
+			}
+		}
+		return str;
+	}
+	
+}

@@ -1,0 +1,31 @@
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+
+public class Demo {
+
+	public static void main(String[] args) {
+
+	}
+
+	String getStringFromFile(){
+		String str;
+		
+		try {
+			FileReader fileReader = new FileReader("C:/ProjectsData/user.txt");
+			BufferedReader bReader = new BufferedReader(fileReader);
+			try {
+				bReader.readLine();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+		
+		return str;
+	}
+	
+}
