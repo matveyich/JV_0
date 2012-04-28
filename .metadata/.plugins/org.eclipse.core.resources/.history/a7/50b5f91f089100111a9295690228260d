@@ -13,7 +13,7 @@ public class Demo {
 		Demo t1 = new Demo();
 		
 		try {
-			t1.putStringToFile("Hello, Vasya!\n");
+			t1.putStringToFile("Hello, Vasya!");
 			System.out.println(t1.getStringFromFile());
 		} catch (IOException e) {
 

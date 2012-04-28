@@ -1,8 +1,6 @@
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.io.FileWriter;
 import java.io.IOException;
 
 
@@ -13,7 +11,6 @@ public class Demo {
 		Demo t1 = new Demo();
 		
 		try {
-			t1.putStringToFile("Hello, Vasya!\n");
 			System.out.println(t1.getStringFromFile());
 		} catch (IOException e) {
 
@@ -22,27 +19,9 @@ public class Demo {
 		
 	}
 
-	void putStringToFile(String str) throws IOException
+	void putStringToFile(String str)
 	{
-		FileWriter fileWriter = null;
-		BufferedWriter bWriter = null;
 		
-		try {
-			fileWriter = new FileWriter("C:\\ProjectsData\\user.txt", true);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		
-		bWriter = new BufferedWriter(fileWriter);
-		try {
-			bWriter.append(str);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		finally {
-			bWriter.close();
-		}
-		//bWriter.append(str);
 	}
 	
 	String getStringFromFile() throws IOException
